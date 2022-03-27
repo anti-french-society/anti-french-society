@@ -1,0 +1,236 @@
+html{scroll-behavior: smooth;}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+}
+section {
+    min-height: 100%;
+}
+a {
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+h1, h2, h3, a {
+    font-family: 'Audiowide', cursive;
+    color: #494949;
+    text-transform: uppercase;
+    
+}
+h1{
+    color: #414141;
+}
+h2{
+    color: #6b6b6b;
+}
+h3{
+    font-size: 40px;
+    padding-top: 7%;
+    margin-bottom: 5px;
+    cursor: default;
+}
+h4, p{
+    font-family: 'Prosto One', cursive;
+}
+hr {
+    width: 40px;
+    height: 3px;
+    background: #494949;
+    border: 0;
+    margin: 0 auto 40px auto;
+}
+
+/*-- HEADER -----------------*/
+header{
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+}
+#Logo, li, img{
+    transition: all 300ms;
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+#Logo {
+    width: 140px;
+    float: left;
+    margin:  10px 0 0 50px;
+}
+#Logo img{
+    width: 50%;
+}
+#Logo:hover{
+    opacity: 0.5;
+}
+header nav {
+    float: right;
+    margin: 10px 50px 0 0;
+}
+header nav ul li {
+    float: left;
+    margin-right: 40px;
+}
+header nav ul li:hover{
+    padding-top: 5px;
+}
+/*-- HOME ----------------------------------*/
+#home {
+    background: url(https://www.welt-flaggen.de/data/flags/w1600/fr.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#home h1 {
+    margin: 290px auto 0 auto;
+    font-size: 70px;
+}
+#home h2{
+    font-size: 110px;
+    margin: 0 auto 0 auto;
+}
+#home img {
+    height: 25px;
+    margin-top: 170px;
+    opacity: 0.6;
+}
+#home img:hover {
+    /*transition: all 300ms;*/
+    opacity: 1;
+}
+/*-- ABOUT -----------------*/
+#about img {
+    width: 300px;
+}
+#about img:hover{
+    -webkit-transform: scale(1.13);
+    -moz-transform: scale(1.13);
+    -o-transform: scale(1.13);
+    transform: scale(1.13);
+}
+
+#about h4{
+    font-size: 30px;
+    color: #3a3a3a;
+}
+#about p {
+    width: 800px;
+    margin: 0 auto 0 auto;
+}
+/*-- SOCIALS ----------------------------------*/
+#social-media {
+    background-color: #f0f0f0;
+}
+#socials {
+    width: 900px;
+    margin: 0 auto 0 auto;
+}
+#socials ul {
+    padding: 0;
+}
+#socials ul li a img{
+    height: 200px;
+    width: 200px;
+}
+#socials ul li a img:hover{
+    -webkit-transform: scale(1.13);
+    -moz-transform: scale(1.13);
+    -o-transform: scale(1.13);
+    transform: scale(1.13);
+}
+#socials ul li {
+    float: left;
+    width: 33.3%;
+}
+#social-media hr{
+    width: 100px;
+    margin-bottom: 150px;
+}
+
+/*-- Partner ----------------------------------*/
+#Partner {
+    width: 900px;
+    margin: 0 auto 0 auto;
+}
+#Partner ul{
+    padding: 0;
+}
+#Partner ul li img{
+    margin: 30px;
+
+}
+#Partner ul li img:hover{
+    -webkit-transform: scale(1.13);
+    -moz-transform: scale(1.13);
+    -o-transform: scale(1.13);
+    transform: scale(1.13);
+}
+#partner hr{
+    margin-bottom: 150px;
+}
+
+/*-- ZUSATZ --------------------------------------------------------------------------------*/
+
+.swing2{
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-animation-name: swing;
+    animation-name: swing;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes swing {
+    20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+    }
+    40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+    }
+    60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+    }
+    80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+    }
+    100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    }
+    }
+    @keyframes swing {
+    20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+    }
+    40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+    }
+    60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+    }
+    80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+    }
+    100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    }
+    }
